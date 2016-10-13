@@ -1,0 +1,2 @@
+# simple_blog
+使用flask搭建的一个数据库驱动的极简blog
