@@ -3,6 +3,7 @@ import flaskr
 import unittest
 import tempfile
 
+
 class FlaskrTestCase(unittest.TestCase):
 
     def setUp(self):
@@ -22,8 +23,7 @@ class FlaskrTestCase(unittest.TestCase):
     def login(self, username, password):
         return self.app.post('/login', data=dict(
             username=username,
-            password=password
-        ), follow_redriects=True)
+            password=password), follow_redirects=True)
 
     def logout(self):
         return self.app.get('/logout', follow_redirects=True)
